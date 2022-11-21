@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header Teacher */
+
+#section-left{
+	margin-left: 250px;
+	
+	overflow-x: hidden;
+	
+	height: auto;
+
+}
+   
+.firstimg-div{
+	width: 100%;
+	height: 30vh;
+     background-image: url('../images/page-header.jpg');
+	  background-position:center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  
+	 
+	 
+	 display: flex;
+	 flex-direction: column;
+	justify-content: center
+	 
+	
+}
+
+.firstimg-div::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 250;
+	width: 100%;
+	height: 30vh;
+	background: rgba(0, 0, 0, 0.5);
+}
+.firstimg-div h1{
+	
+	color: #fff;
+	font-size: 4rem;
+	z-index: 1;
+	margin-left: 10%;
+
+}
+.firstimg-div span{
+	color: #fff;
+	z-index: 1;
+	font-size: 1.5rem;
+	margin-left: 10%;
+}
+.firstimg-div span a{
+	text-decoration: none;
+	color: #fff;
+	margin-right: 20px;
+}
+.firstimg-div span a:hover{
+	border-bottom: 1px solid #fff;
+}
+.container{
+	width: 85%;
+	margin: auto;
+	
+}
+.texts-div{
+	margin-top: 8%;
+	margin-bottom: 2%;
+	text-align: center;
+}
+
+.texts-div p{
+	text-transform: uppercase;
+	 color: #ff6600;
+	 font-size: 1.5rem;
+
+}
+.texts-div h1{
+	text-transform: capitalize;
+	font-size: 2.3rem;
+	color: #44425a;
+}
+
+
+
+@media(max-width:700px)
+{
+	
+	.firstimg-div h1{
+		font-size: 3rem;
+	}
+	
+}
+@media(max-width:768px)
+{
+	.firstimg-div::before{
+		
+		left: 0;
+		
+	}
+	#toggle{
+		z-index: 3;
+	}
+	#header{
+		z-index: 2;
+	}
+	#section-left{
+		margin-left: 0;
+	}
+	
+
+}

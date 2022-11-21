@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+	overflow-x: hidden;
+}
+/* Teacher Style */
+.firstdiv-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.imgs-div{
+    width: 23%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background:#f2f1f8 ;
+    color: #44425a;;
+    overflow: hidden;
+    margin-top: 2.5%;
+
+
+}
+.img-div{
+    width: 100%;
+    height: auto;
+    border: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.img-div img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+   
+    transition: all 2s;
+   
+}
+.overlay .inner-images{
+    width: 25px;
+    height: 15px;
+    padding: 15px;
+    margin-left: 8px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+   
+  
+}
+.overlay .inner-images:hover{
+    background: #fff;
+}
+
+ .img-div:hover .overlay{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+
+    
+}
+.imgs-div h4{
+    padding-top: 10px;
+    margin-bottom: 7px;
+}
+.imgs-div p{
+    padding-bottom: 20px;
+}
+@media(max-width:768px)
+{
+    .imgs-div{
+        width: 48%;
+    }
+
+}
+
+/* Contact Style */
+
+
+.main-div{
+    width: 67%;
+    margin: auto;
+    background: #f2f1f8;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 3%;
+    
+    
+
+}
+.form-div{
+    width: 100%;
+    
+    
+}
+.form-div form{
+    width: 100%;
+    margin-top: 5%;
+    text-align: center;
+   
+}
+.form-div form input {
+    width: 80%;
+    height: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding-left: 3%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #44425a;
+    border-radius: 10px;
+}
+#textarea{
+    max-width: 80%;
+    min-width: 80%;
+    min-height: 5%;
+    border: none;
+    outline: none;
+    padding-left: 3%;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    border-radius: 10px;
+
+}
+.submit-div
+{
+    width: 100%;
+    text-align: center;
+}
+#submit-button{
+
+    padding:17px 50px;
+    margin-top: 20px;
+    margin-bottom: 10%;
+    color: #fff;
+    background:#ff6600 ;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    border-radius: 10px;
+
+}
+@media(max-width:1000px)
+{
+    .main-div{
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

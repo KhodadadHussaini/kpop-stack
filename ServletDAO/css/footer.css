@@ -1,0 +1,171 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+	overflow-x: hidden;
+}
+
+.contacts{
+	
+	min-height: 250px;
+	background: #44425a;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 10%;
+	padding-bottom: 7%;
+	border-bottom: 0.4px solid #aaa;
+	
+}
+.contacts h4{
+	letter-spacing: 1.5;
+	color:#ff6611 ;
+	margin-bottom: 10px;
+}
+.lastdiv{
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+    padding-top: 5%;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #fff;
+
+
+}
+.lastdiv1{
+	flex: 2;
+	width: 30%;
+	margin-left: 20px;
+	line-height: 1.5;
+
+}
+
+.lastdiv2{
+	width: 30%;
+	flex: 2;
+}
+.lastdiv2 a{
+	color: #fff;
+	text-decoration: none;
+	line-height: 1.5;
+}
+.lastdiv3{
+	flex: 4;
+	width:45% ;
+	padding-right: 10%;
+	
+	padding-left: 20px;
+}
+.lastdiv3 form{
+	display: flex;
+	justify-content:start;
+	width: 100%;
+
+}
+.lastdiv3 input[type="text"]{
+	width: 60%;
+	height: 45px;
+	border: none;
+	outline: none;
+	padding-left: 20px;
+	margin-top: 20px;
+	margin-right: 0;
+	padding-right: 0;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+.lastdiv3 input[type="submit"]{
+	margin-top: 20px;
+	height: 45px;
+	border: none;
+	outline: none;
+	padding-right: 10px;
+	padding-left: 10px;
+	background: #ff6611;
+	color: #fff;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	cursor: pointer;
+}
+
+@media(max-width:1000px)
+{
+	.lastdiv1{
+		flex: 50%;
+		
+	}
+	.lastdiv2{
+		flex: 40%;
+		margin-left: 20px;
+		
+	}
+	.lastdiv3{		
+		margin-left: 20px;
+		flex: 40%;
+	}
+	
+
+}
+@media(max-width:700px){
+	.lastdiv1{
+		flex: 100%;
+		
+	}
+	.lastdiv2{
+		flex: 100%;
+		padding-left: 20px;
+		
+	}
+	.lastdiv3{		
+		margin-left: 20px;
+		flex: 40%;
+	}
+}
+
+#footer{
+	background:  #44425a;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+#footer p{
+	color: #fff;
+}
+#footer span{
+	color: #ff6611;
+}
+.last-footer{
+	width: 25%;
+	display: flex;
+	justify-content:space-between;
+}
+.last-footer a{
+	color: #fff;
+	text-decoration: none;
+}
+@media(max-width:900px)
+{
+	#footer p{
+		width: 100%;
+		text-align: center;
+		flex: 100%;
+	}
+	.last-footer{
+		padding-top: 2%;
+		width: 50%;
+		justify-content: space-around;
+	}
+	
+}
+@media(max-width:700px){
+	.last-footer{
+		width: 90%;
+	}
+
+}
