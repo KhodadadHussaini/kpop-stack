@@ -1,0 +1,218 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+}
+
+main{
+    max-width: 90vw;
+    min-width: 60%;
+    height: 80vh;    
+    margin-top: 10vh;
+    margin: auto ;
+    margin-top: 10vh !important;
+    position: relative;
+   
+}
+
+.section_1{
+
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+    
+    
+
+}
+.section_1 .div_1,
+.section_1 .div_2
+{
+ 
+   flex: 5;
+   height: 100%;
+   text-align: center;
+   background-color: rgba(100, 148, 237,0.5);
+   backdrop-filter: blur(0px);
+   
+
+}
+
+.back_1{
+    background-color: burlywood !important;
+    /* backdrop-filter: blur(90%); */
+    backdrop-filter: blur(100px);
+}
+
+
+.div_1 .player_1,
+.div_2 .player_2
+{
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 1000;
+    margin-bottom: 10%;
+    padding-top: 30px;
+
+}
+.div_1 .score_player_1,
+.div_2 .score_player_2
+{
+    
+    font-size: 4rem;
+    font-weight: 1000;   
+    color:#c7365f ;
+}
+.div_1 .current_score_div_1,
+.div_2 .current_score_div_2
+{
+    background-color: #c7365f;
+    width: 170px;
+    height: 130px;
+    text-align: center;
+    margin-top: 50% !important;
+    margin: auto;
+    border-radius: 15px;
+    color: #ddd;
+
+}
+.div_1 .current_score_div_1 .current_1,
+.div_2 .current_score_div_2 .current_2
+{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 800;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+.div_1 .current_score_div_1 .current_score_1,
+.div_2 .current_score_div_2 .current_score_2
+{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.btn:active {
+    transform: translate(0.5%,3px);
+}
+main .dice{
+    position: absolute;
+    top: 19%;
+    left: 50%;
+    width: 100px;
+    transform: translate(-50%, 3px);
+    transition:transform 1s ;
+
+}
+main .roll_game{
+    position: absolute;
+    top: 62%;
+    left: 40.5%;
+    padding: 7px 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #567;
+    border: none;
+    border-radius: 15px;
+    /* transform: translateX(-0%); */
+    cursor: pointer;
+
+}
+main .hold
+{
+    position: absolute;
+    top: 72%;
+    left: 43%;
+    padding: 7px 15px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #567;
+    border: none;
+    border-radius: 15px;
+    /* transform: translateX(-0%); */
+    cursor: pointer;
+
+}
+main .new_game{
+    position: absolute;
+    top: 5%;
+    left: 39%;
+    padding: 7px 15px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #567;
+    border: none;
+    border-radius: 15px;
+    /* transform: translateX(-0%); */
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+@media(min-width:1000px){
+    .section_1{       
+        width: 100%;         
+        margin: auto;  
+    
+    }
+    .div_1 .current_score_div_1,.div_2 .current_score_div_2{
+        
+        margin-top: 40% !important;
+        
+    
+    }
+    main{
+        width: 60vw;
+        
+    }
+    main .new_game{   
+        top: 6%;     
+        left: 42%;     
+    
+    }
+    main .roll_game{
+        top: 65%;
+        left: 42.4%;
+        padding: 7px 15px;
+        
+    
+    }
+    main .hold
+    {     
+        top: 75%;   
+        left: 44%;
+        padding: 7px 20px;        
+    
+    }
+    main .dice{
+        top: 20%;
+        left: 50%;
+        width: 100px;
+    
+    }
+
+}
+
+
+.hidden{
+    display: none;
+}
+.wine{
+    background-color: #000 !important;
+    color: white;
+}
